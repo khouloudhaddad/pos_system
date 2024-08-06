@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Kufam';
+    src: url(fonts/Kufam/Kufam-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kufam';
+    src: url(fonts/Kufam/Kufam-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kufam', sans-serif;
+    overflow-x: hidden;
+    font-size: 1rem;
+}
