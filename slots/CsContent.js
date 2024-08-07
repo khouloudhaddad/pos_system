@@ -1,6 +1,6 @@
 import { CS_HTMLElement } from "../_base/cs-htmlelement.js";
 
-class CsApp extends CS_HTMLElement{
+class CsContent extends CS_HTMLElement{
     constructor(){
         super();
     }
@@ -8,11 +8,10 @@ class CsApp extends CS_HTMLElement{
     connectedCallback() {
         this.shadowRoot.innerHTML = 
         `<div>
-            <slot name="header"></slot>
-            <slot name="leftSidebar"></slot>
+            <h1>CS Content</h1>
         </div>
         `;
     }
 }
 
-export { CsApp };
+export { CsContent };

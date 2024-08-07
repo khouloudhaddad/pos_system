@@ -8,7 +8,7 @@ class CsHeader extends CS_HTMLElement {
     connectedCallback() {
         this.shadowRoot.innerHTML = 
         `<div>
-            <h1>IC Header</h1>
+            <h1>CS Header</h1>
         </div>
         `;
     }
