@@ -13,7 +13,7 @@ class SmftUserAccount extends CS_HTMLElement {
             </div>
             <div class="avatar">
                 <div class="dropdown">
-                <button onclick="toggleDropdown()" class="toggle"><img src="../public/img/avatar.png" alt="" /></button>
+                <button class="toggleBtn"><img src="../public/img/avatar.png" alt="" /></button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
@@ -34,15 +34,16 @@ class SmftUserAccount extends CS_HTMLElement {
                     flex-direction:  column;
                     text-align: right;
                 }
-                h5{
+                h5 {
                    font-weight: 700;
                    font-size: 1.2rem;
-                   margin-bottom: 0;
+                   margin: 0;
                 }
-                p{
+                p {
                     color: #adb5bd;
-                    font-size: 0.85rem;
-                    margin-top: 0;
+                    font-size: 0.8rem;
+                    margin: 0;
+                    font-weight: 300;
                 }
                 .avatar{
                     width: 50px;
@@ -53,13 +54,14 @@ class SmftUserAccount extends CS_HTMLElement {
                     max-width: 100%;
                 }
 
-                .toggle {
-                    background-color: #3498DB;
-                    color: white;
-                    padding: 16px;
+                .toggleBtn {
                     font-size: 16px;
                     border: none;
                     cursor: pointer;
+                    z-index: 3000;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
                 }
 
                 .dropbtn:hover, .dropbtn:focus {

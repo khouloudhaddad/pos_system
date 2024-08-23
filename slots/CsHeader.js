@@ -15,7 +15,7 @@ class CsHeader extends CS_HTMLElement {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0rem 1.5rem;
+                padding: 0.75rem 1.5rem;
                 border-bottom: 1px solid #dee2e6;
                 background: #fff;
             }

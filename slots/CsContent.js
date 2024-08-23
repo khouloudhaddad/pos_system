@@ -7,9 +7,15 @@ class CsContent extends CS_HTMLElement{
 
     connectedCallback() {
         this.shadowRoot.innerHTML = 
-        `<div>
-            <h1>CS Content</h1>
-        </div>
+        `<h1>CS Content</h1>
+        
+
+        <style>
+            :host{
+                padding: 1rem 1.25rem;
+                display: flex;
+            }
+        </style>
         `;
     }
 }
