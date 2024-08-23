@@ -7,7 +7,7 @@ class CsApp extends CS_HTMLElement{
 
     connectedCallback() {
         this.shadowRoot.innerHTML = 
-        `<div>
+        `<div class="main_wrapper">
             <slot name="main_header"></slot>
             <slot name="leftSidebar"></slot>
             <slot name="content"></slot>

@@ -7,9 +7,19 @@ class CsHeader extends CS_HTMLElement {
 
     connectedCallback() {
         this.shadowRoot.innerHTML = 
-        `<div>
-            <h1>CS Header</h1>
-        </div>
+        `<slot name="searchBar"><smft-search-bar></smft-search-bar></slot>
+        <slot name="userAccount"><smft-user-account></smft-user-account></slot>
+
+        <style>
+            :host {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0rem 1.5rem;
+                border-bottom: 1px solid #dee2e6;
+                background: #fff;
+            }
+        </style>
         `;
     }
 }
